@@ -1,5 +1,5 @@
-<nav>
-  <ul>
+<div class="navbar">
+  <ul class="list-inline">
       <li><%= link_to 'Posts', posts_path %></li>
       <% if current_user %>
         <li><a href="/users/<%=current_user.id%>"><%= "Hello, #{current_user.name}!" %></a></li>
@@ -10,4 +10,4 @@
         <li><%= link_to "Log In", login_path %></li>
       <% end %> 
   </ul>
-</nav>
+</div> <!-- navbar -->
